@@ -16,7 +16,7 @@ public class GitTests {
     }
 
     @Test
-    void GithubJUnitCodeExist() {
+    void githubJUnitCodeExist() {
         open("/selenide/selenide");
         $("[aria-label='Repository']").$("#wiki-tab").click();
         $("#wiki-pages-box").shouldBe(Condition.visible);
